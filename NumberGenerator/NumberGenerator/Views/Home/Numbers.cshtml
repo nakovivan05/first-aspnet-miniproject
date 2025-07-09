@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Numbers 1..." + ViewBag.numbersRange;
+}
+<h2>@ViewBag.Title</h2>
+<ul>
+    @for (int i = 1; i <= ViewBag.numbersRange; i++)
+    {
+        <li>@i</li>
+    }
+</ul>
+<form method="post">
+    <input type="text" placeholder="New number" name="number" />
+    <button type="submit">
+        Submit
+    </button>
+</form>
+
